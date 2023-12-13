@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>WEBPAGES_OF_TOPICS</h1>
+        <table border="3px">
+            <tr>
+                <th>pk_values</th>
+                <th>topic_name</th>
+                <th>name</th>
+            </tr>
+            {% for to in W %}
+              <tr>
+                <td>{{to.pk}}</td>
+                <td>{{to.topic_name}}</td>
+                <td>{{to.name}}</td>
+              </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
