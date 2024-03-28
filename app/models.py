@@ -24,3 +24,12 @@ class AccessRecord(models.Model):
 
     def __str__(self):
         return self.author
+
+
+class country(models.Model):
+    cname=models.CharField(primary_key=True,max_length=100) 
+
+    def __str__(self):
+        return self.cname
+class capital(models.Model):
+    cname=models.ForeignKey(Topic,on_delete=models.CASCADE)               

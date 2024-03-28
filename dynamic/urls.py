@@ -22,5 +22,5 @@ from app.views import *
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('dynamic_Topics',dynamic_Topics,name='dynamic_Topics'),
-    path('dynamic_webpages',dynamic_webpages,name='dynamic_webpages'),
+    #path('dynamic_webpages',dynamic_webpages,name='dynamic_webpages'),
 ]
